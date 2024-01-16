@@ -37,15 +37,28 @@ echo gettype($height) . '<br>';
 echo gettype($salary) . '<br>' . '<br>';
 
 // Print the whole variable
+var_dump($name, $age, $isMale, $anotherBoolean, $height, $salary);
 
 // Change the value of the variable
+$name = 'Ozy Ozy';
 
 // Print type of the variable
+echo '<br>' . $name . '<br>';
 
 // Variable checking functions
+is_string($name); // true 
+is_int($age); // true
+is_bool($isMale); // true
+is_double($height); // true
 
 // Check if variable is defined
+isset($name); // true
+isset($address); // false
 
 // Constants
+define('PI', 3.14);
+echo PI . '<br>';
 
 // Using PHP built-in constants
+echo SORT_ASC . '<br>';
+echo PHP_INT_MAX . '<br>';
