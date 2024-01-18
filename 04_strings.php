@@ -39,18 +39,18 @@ echo str_repeat('Hello', 2) . '<br>' . PHP_EOL;
 
 // Multiline text and line breaks
 $longText = "
-  Hello, my name is Zura
-  I am 27,
-  I love my daughter
+  Hello, my name is Ozy
+  I am 33,
+  I love cats
 ";
 echo $longText . '<br>' . PHP_EOL;
 echo nl2br($longText) . '<br>' . PHP_EOL;
 
 // Multiline text and reserve html tags
 $longText = "
-  Hello, my name is <b>Zura</b>
-  I am <b>27</b>,
-  I love my daughter
+  Hello, my name is <b>Ozy</b>
+  I am <b>33</b>,
+  I love cats
 ";
 echo "1 - " . $longText . '<br>';
 echo "2 - " . nl2br($longText) . '<br>';
