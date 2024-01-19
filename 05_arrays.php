@@ -1,28 +1,59 @@
 <?php
 
 // Create array
+$fruit = ["Banana", "Apple", "Orange"];
+// $fruit = array(); // old-fashion way
 
 // Print the whole array
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 // Get element by index
+echo $fruit[1] . '<br>';
 
 // Set element by index
+$fruit[0] = 'Peach';
 
 // Check if array has element at index 2
+isset($fruit[2]); // true
+isset($fruit[3]); // false
 
 // Append element
+$fruit[] = 'Banana';
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 // Print the length of the array
+echo count($fruit) . '<br>';
 
 // Add element at the end of the array
+array_push($fruit, 'foo');
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 // Remove element from the end of the array
+array_pop($fruit);
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 // Add element at the beginning of the array
+array_unshift($fruit, 'bar');
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 // Remove element from the beginning of the array
+array_shift($fruit);
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 // Split the string into an array
+
 
 // Combine array elements into string
 
