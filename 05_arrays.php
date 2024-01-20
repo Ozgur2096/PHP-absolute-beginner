@@ -53,17 +53,39 @@ var_dump($fruit);
 echo '</pre>';
 
 // Split the string into an array
-
+$string = "Banana,Apple,Peach";
+$arrayFromString = explode(",", $string);
+echo '<pre>';
+var_dump($arrayFromString);
+echo '</pre>';
 
 // Combine array elements into string
+echo implode("&", $fruit);
 
 // Check if element exist in the array
+echo '<pre>';
+var_dump(in_array("Mango", $fruit));
+echo '</pre>';
 
 // Search element index in the array
+echo '<pre>';
+var_dump(array_search("Banana", $fruit));
+var_dump(array_search("Mango", $fruit));
+echo '</pre>';
 
 // Merge two arrays
+$vegetables = ["Potato", "Cucumber"];
+$mergedArray = array_merge($vegetables, $fruit);
+echo '<pre>';
+var_dump($mergedArray);
+var_dump([...$vegetables, ...$fruit]);
+echo '</pre>';
 
 // Sorting of array (Reverse order also)
+sort($fruit);
+echo '<pre>';
+var_dump($fruit);
+echo '</pre>';
 
 
 // https://www.php.net/manual/en/ref.array.php
