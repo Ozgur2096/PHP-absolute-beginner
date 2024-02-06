@@ -95,6 +95,15 @@ echo '</pre>';
 // ============================================
 
 // Create an associative array
+$person = [
+  'name' => 'John',
+  'surname' => 'Doe',
+  'age' => 33,
+  'hobbies' => ['tennis', 'football']
+];
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
 
 // Get element by key
 
