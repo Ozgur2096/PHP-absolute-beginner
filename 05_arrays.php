@@ -106,18 +106,56 @@ var_dump($person);
 echo '</pre>';
 
 // Get element by key
+echo $person['name'];
 
 // Set element by key
+$person['address'] = 'Leeuwarden';
+echo $person['address'];
 
 // Null coalescing assignment operator. Since PHP 7.4
+if (!isset($person['weight'])) {
+  $person['weight'] = 80;
+};
+
+$person['eyeColor'] ??= 'green';
+$person['weight'] ??= 'unknown';
+
+
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
+
 
 // Check if array has specific key
+echo isset($person['name']);
 
 // Print the keys of the array
+echo '<pre>';
+var_dump(array_keys($person));
+echo '</pre>';
 
 // Print the values of the array
+echo '<pre>';
+var_dump(array_values($person));
+echo '</pre>';
 
 // Sorting associative arrays by values, by keys
+ksort($person); // sort by keys
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
 
+asort($person); // sort by values
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
 
 // Two dimensional arrays
+$toDos = [
+  ['todo' => 'todo title 1', 'completed' => true],
+  ['todo' => 'todo title 2', 'completed' => false],
+];
+
+echo '<pre>';
+var_dump($toDos);
+echo '</pre>';
