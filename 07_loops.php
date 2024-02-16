@@ -24,5 +24,24 @@ for ($i = 0; $i < 10; $i++) {
 echo '</br>';
 
 // foreach
+$fruitArray = ['banana', 'orange', 'apple'];
+foreach ($fruitArray as $i => $fruit) {
+  echo $i . $fruit . '</br>';
+};
+
 
 // Iterate Over associative array.
+$person = [
+  'name' => 'Ozy',
+  "surname" => 'Oz',
+  'age' => 30,
+  'hobbies' => ['tennis', 'reading']
+];
+
+foreach ($person as $key => $value) {
+  if (is_array($value)) {
+    echo $key . ' ' . implode(',', $value) . '</br>';
+  } else {
+    echo $key . ' ' . $value . '</br>';
+  };
+};
